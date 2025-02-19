@@ -50,14 +50,14 @@ a.visited {
 
 .gridcont {
     display: grid;
-    grid-template-rows: repeat(4, 20rem);
+    grid-template-rows: repeat(4, auto);
     grid-template-columns: minmax(200px 400px) minmax(200px 400px);
     width: 100%;
     max-width: 90rem;
     grid-column-gap: 6rem;
     grid-row-gap: 3rem;
     align-items: center;
-    margin: 17rem auto 14rem auto;
+    margin: 3% auto 14rem auto;
 }
 
 
@@ -89,7 +89,7 @@ a.visited {
 .title {
     grid-column-start: span 2;
     text-align: left;
-    margin-top: 12rem;
+    margin-top: 10%;
     margin-left: 4rem;
 }
 
@@ -98,8 +98,16 @@ a.visited {
  .screenshot {
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-top: 6rem;
+    margin-top: 5%;
     margin-left: 4rem;
+}
+
+.screenshot-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 4rem;
+    width: 105%;
+    height: auto;
 }
 
 .screenshot > img {
@@ -113,8 +121,18 @@ a.visited {
     grid-column-start: 2;
     text-align: left;
     width: 80%;
+    margin-top: 5%;
+    margin-left: 4rem;
+    
+}
+
+.description-2 {
+    grid-column-start: 2;
+    text-align: left;
+    width: 80%;
     margin-top: 4rem;
     margin-left: 4rem;
+    padding-bottom: 16%;
 }
 
 .about {
@@ -174,7 +192,7 @@ tr {
     .gridcont {
         display: flex;
         flex-direction: column;
-        margin: 4rem auto 2rem auto;
+        margin: 8% auto 8% auto;
         justify-content: center;
         align-items: center;
     }
@@ -208,8 +226,12 @@ tr {
     
     
     
-    .screenshot {
+    .screenshot, .screenshot-2 {
         margin: 0 2rem;
+    }
+
+    .screenshot-2 {
+        width: 90%;
     }
     
     .screenshot > img {
